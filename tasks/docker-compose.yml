@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  aok:
+    image: joshwyatt/aok:1.0.0
+    ports:
+      - 8000:8000

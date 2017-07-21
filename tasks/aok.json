@@ -1,0 +1,60 @@
+{
+  "requiresAttributes": [
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17",
+      "targetId": null,
+      "targetType": null
+    },
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18",
+      "targetId": null,
+      "targetType": null
+    }
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:116138389191:task-definition/ecscompose-tasks:1",
+  "networkMode": "bridge",
+  "status": "ACTIVE",
+  "revision": 1,
+  "taskRoleArn": null,
+  "containerDefinitions": [
+    {
+      "volumesFrom": [],
+      "memory": 512,
+      "extraHosts": [],
+      "dnsServers": [],
+      "disableNetworking": null,
+      "dnsSearchDomains": [],
+      "portMappings": [
+        {
+          "hostPort": 8000,
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "hostname": null,
+      "essential": true,
+      "entryPoint": [],
+      "mountPoints": [],
+      "name": "aok",
+      "ulimits": [],
+      "dockerSecurityOptions": [],
+      "environment": [],
+      "links": [],
+      "workingDirectory": null,
+      "readonlyRootFilesystem": false,
+      "image": "joshwyatt/aok:1.0.0",
+      "command": [],
+      "user": null,
+      "dockerLabels": {},
+      "logConfiguration": null,
+      "cpu": 0,
+      "privileged": false,
+      "memoryReservation": null
+    }
+  ],
+  "placementConstraints": [],
+  "volumes": [],
+  "family": "aok"
+}
