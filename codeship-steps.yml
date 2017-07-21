@@ -1,8 +1,6 @@
-- type: parallel
+- type: serial
   steps:
-  - type: serial
-    steps:
-    - service: awsdeployment
-      command: aws ecs register-task-definition --cli-input-json file:///deploy/tasks/aok.json
-    - service: awsdeployment
-      command: aws ecs update-service --service aok-service --task-definition aok
+  - service: awsdeployment
+    command: aws ecs register-task-definition --cli-input-json file:///deploy/tasks/aok.json
+  - service: awsdeployment
+    command: aws ecs update-service --service aok-service --task-definition aok
